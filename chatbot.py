@@ -190,7 +190,7 @@ def get_response(message, user_name):
     if "+" in message_lower or "-" in message_lower or "*" in message_lower:
         try:
             result  = eval(message_lower)
-            return result
+            return str(result)
         except:
             return "Invalid math expression"
         
